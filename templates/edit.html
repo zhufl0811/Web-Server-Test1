@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{static_url("css/semantic.min.css")}}">
+    <script src="{{static_url("js/semantic.min.js")}}"></script>
+    <title>Edit</title>
+</head>
+<body>
+<h2>编辑数据</h2>
+<form method='post' name='edit' id='edit' class='form ui'>
+    <table class='table ui'>
+    <tr><td>手机名称：</td><td><input name='name' type='text' class='input ui' value='{{data[1]}}' /></td></tr>
+    <tr><td>价格：</td><td><input name='price' type='text' class='input ui' value='{{data[2]}}' /></td></tr>
+    <tr><td>评分：</td><td><input name='rank' type='text' class='input ui' value='{{data[3]}}' /></td></tr>
+    </table>
+     <input type='submit' value='确认修改' class='button ui'>
+</form>
+</body>
+</html>

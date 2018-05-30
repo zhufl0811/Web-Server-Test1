@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{static_url("css/semantic.min.css")}}">
+    <!--<script src="{{static_url("js/jquery.js")}}"></script>-->
+    <script src="{{static_url("js/semantic.min.js")}}"></script>
+    <title>Add Record</title>
+</head>
+<body>
+<h2>
+    新增记录
+    </h2>
+<form name='add record' method='post' id='add record' class='form ui'>
+<table name='add table' class='table ui'>
+        <tr><td>手机名称：</td><td><input type='text' name='name' id='name' class='input ui'></td></tr>
+        <tr><td>价格（RMB）：</td><td><input type='text' name='price' id='price' class='input ui'></td></tr>
+        <tr><td>评分（0-10）：</td><td><input type='text' name='rank' id='rank' class='input ui'></td></tr>
+        </table>
+        <input type='submit' value='新增' class='button ui'>
+        </form>
+</body>
+</html>
